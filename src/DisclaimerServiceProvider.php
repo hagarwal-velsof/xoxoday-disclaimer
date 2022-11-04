@@ -32,7 +32,10 @@ class DisclaimerServiceProvider extends ServiceProvider
             // Publish assets
             $this->publishes([
               __DIR__.'/resources/disclaimer_assets' => public_path('disclaimer_assets'),
+              __DIR__.'/config/disclaimer.php' => config_path('disclaimer.php')
             ], 'disclaimer_assets');
+
+          
           
           }
     }

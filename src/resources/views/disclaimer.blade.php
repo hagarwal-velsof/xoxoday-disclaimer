@@ -16,7 +16,7 @@
         <p>Spin The Wheel &amp; claim your reward.</p>
       </li>
     </ul>
-    <a href="{{ $redirect_url }}" class="btn-fluid">Continue</a>
+    <a href="{{ url($redirect_url) }}" class="btn-fluid">Continue</a>
     <hr class="horizontal-divider">
     <div class="bottom-desc">
       <p>By pressing continue, you agree with the terms and condition.</p>

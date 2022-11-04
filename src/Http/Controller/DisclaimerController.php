@@ -13,8 +13,8 @@ class DisclaimerController extends Controller
     public function index()
     {   
 
-    $terms_url = Config('app.xoxoday_disclaimer_terms_condition_url');
-    $redirect_url = Config('app.xoxoday_disclaimer_redirect_url');
+    $terms_url = Config('disclaimer.xoxoday_disclaimer_terms_condition_url');
+    $redirect_url = Config('disclaimer.xoxoday_disclaimer_redirect_url');
       return view('disclaimer::disclaimer',compact(['terms_url','redirect_url']));
     }
 
