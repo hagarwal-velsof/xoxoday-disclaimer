@@ -1,0 +1,17 @@
+{
+    "name": "xoxoday/disclaimer",
+    "description": "This package contains the code for the disclaimer page.",
+    "autoload": {
+        "psr-4": {
+            "Xoxoday\\Disclaimer\\": "src/"
+        }
+    },
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Xoxoday\\Disclaimer\\DisclaimerServiceProvider"
+            ]
+        }
+    }
+}
