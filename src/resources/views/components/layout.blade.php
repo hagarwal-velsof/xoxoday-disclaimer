@@ -8,7 +8,6 @@
     <title>Alcobrew</title>
     <link href="{{asset('disclaimer_assets/css/bootstrap.min.css')}}" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('disclaimer_assets/css/font-awesome.min.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/css2')}}">
   </head>
   <body>
 
