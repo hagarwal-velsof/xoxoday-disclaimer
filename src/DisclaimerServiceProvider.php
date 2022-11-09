@@ -24,19 +24,17 @@ class DisclaimerServiceProvider extends ServiceProvider
    
     public function boot()
     {
-        
+        $this->loadMigrationsFrom(__DIR__.'/Database/Migrations');   
         $this->loadRoutesFrom(__DIR__.'/routes/web.php');
-        $this->loadViewsFrom(__DIR__.'/resources/views','disclaimer');
+        $this->loadViewsFrom(__DIR__.'/resources/views','xoform');
 
         if ($this->app->runningInConsole()) {
             // Publish assets
             $this->publishes([
-              __DIR__.'/resources/disclaimer_assets' => public_path('disclaimer_assets'),
-              __DIR__.'/config/disclaimer.php' => config_path('disclaimer.php')
-            ], 'disclaimer_assets');
-
-          
-          
+              __DIR__.'/Database/Seeders/CodesSeeder.php' => database_path('Seeders/CodesSeeder.php'),
+              __DIR__.'/resources/assets' => public_path('xoform_assets'),
+              __DIR__.'/config/xoform.php' => config_path('xoform.php')
+            ], 'xoform_assets');
           }
     }
 
